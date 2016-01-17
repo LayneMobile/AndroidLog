@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.laynepenney.util;
+package com.laynemobile.androidlog;
 
 import android.util.Log;
 
