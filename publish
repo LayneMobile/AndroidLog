@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./gradlew clean :androidlog:build :androidlog:publish
