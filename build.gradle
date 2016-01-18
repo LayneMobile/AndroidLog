@@ -19,8 +19,14 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:${androidlogAndroidGradlePluginVersion}"
+        classpath "com.android.tools.build:gradle:${androidlogAndroidGradleVersion}"
+        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:${androidlogBintrayGradlePlugin}"
+        classpath "com.github.dcendents:android-maven-gradle-plugin:${androidlogAndroidMavenGradleVersion}"
     }
+}
+
+ext {
+    LICENSES = ["Apache-2.0"]
 }
 
 subprojects {

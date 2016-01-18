@@ -16,12 +16,6 @@
 
 apply plugin: 'com.android.library'
 
-ext {
-    version = VERSION_NAME
-    groupId = GROUP
-    artifactId = 'androidlog'
-}
-
 android {
     compileSdkVersion androidlogCompileSdkVersion as int
     buildToolsVersion androidlogBuildToolsVersion
@@ -41,4 +35,4 @@ android {
 
 dependencies {}
 
-apply from: "${rootDir}/gradle/artifacts.gradle"
+apply from: 'https://raw.github.com/LayneMobile/gradle-publish/master/artifacts.gradle'
