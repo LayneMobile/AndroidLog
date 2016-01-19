@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.laynemobile.androidlog;
+package com.laynemobile.android;
 
 import java.util.Locale;
 
