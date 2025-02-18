@@ -14,7 +14,11 @@
  * limitations under the License.
  */
 
+def pubDir = "${rootDir}/gradle"
+
 apply plugin: 'com.android.library'
+apply from: "${pubDir}/pom.gradle"
+apply from: "${pubDir}/mavenPublish.gradle"
 
 android {
     compileSdkVersion androidlogCompileSdkVersion as int
@@ -35,4 +39,4 @@ android {
 
 dependencies {}
 
-apply from: 'https://raw.github.com/LayneMobile/gradle-publish/master/artifacts.gradle'
+//apply from: 'https://raw.github.com/LayneMobile/gradle-publish/master/artifacts.gradle'
